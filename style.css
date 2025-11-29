@@ -69,15 +69,23 @@ nav ul li a:hover {
 }
 
 .card {
+    background: white;
     padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #e1e4f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 form {
