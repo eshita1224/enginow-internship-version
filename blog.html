@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Enginow - Blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enginow – Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">ENGINOW</div>
-    <ul>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">Enginow</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-icon">☰</label>
+
+    <nav class="site-nav">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="container">
-    <h1>Latest Blogs</h1>
+<main>
 
-    <div class="card">
-        <h3><a href="https://enginow.in/blog">Understanding Time Complexity in Algorithms</a></h3>
+<section class="section">
+  <div class="container">
+    <h2>Latest Blogs</h2>
+
+    <div class="blog-list">
+
+      <article class="card">
+        <h3>How to Start Learning DSA</h3>
+        <p>Data Structures & Algorithms explained for beginners.</p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+      <article class="card">
+        <h3>What is HTML & CSS?</h3>
+        <p>A complete guide to building modern websites.</p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+      <article class="card">
+        <h3>Top 5 Programming Languages in 2025</h3>
+        <p>Which languages should you learn for best career opportunities?</p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
     </div>
+  </div>
+</section>
 
-    <div class="card">
-        <h3><a href="https://enginow.in/blog">Memory Management Techniques in Modern Operating Systems</a></h3>
-    </div>
-
-    <div class="card">
-        <h3><a href="https://enginow.in/blog">Introduction to Machine Learning for CS Students</a></h3>
-    </div>
-</div>
+</main>
 
 <footer>
-    © 2025 Enginow-  Internship task version
+  <p>© 2025 Enginow. All rights reserved.</p>
 </footer>
 
 </body>

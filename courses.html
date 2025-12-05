@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Enginow - Courses</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enginow – Courses</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">ENGINOW</div>
-    <ul>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">Enginow</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-icon">☰</label>
+
+    <nav class="site-nav">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="container">
-    <h1>Our Courses</h1>
+<main>
 
-    <div class="card">
-        <h3>Data Structures & Algorithms</h3>
-        <p>Master the fundamentals of DSA with practical examples</p>
-        
-        <a class="btn" href="https://enginow.in/courses">View Course</a>
+<section class="section">
+  <div class="container">
+    <h2>Our Popular Courses</h2>
+
+    <div class="courses-grid">
+
+      <article class="card course-card">
+        <img src="assets/c1.jpg" alt="C Programming Course Thumbnail">
+        <h3>C Programming</h3>
+        <p>Learn the basics of C with easy examples and practice questions.</p>
+        <a class="btn" href="#">Start Learning</a>
+      </article>
+
+      <article class="card course-card">
+        <img src="assets/c2.jpg" alt="Java Course Thumbnail">
+        <h3>Java Programming</h3>
+        <p>Object-oriented programming explained with hands-on examples.</p>
+        <a class="btn" href="#">Start Learning</a>
+      </article>
+
+      <article class="card course-card">
+        <img src="assets/c3.jpg" alt="HTML CSS Course Thumbnail">
+        <h3>Web Development</h3>
+        <p>Build modern websites using HTML and CSS with real projects.</p>
+        <a class="btn" href="#">Start Learning</a>
+      </article>
+
     </div>
+  </div>
+</section>
 
-    <div class="card">
-        <h3>Computer Organization & Architecture</h3>
-        <p>Understand the inner workings of computer systems</p>
-        <a class="btn" href="https://enginow.in/courses">View Course</a>
-    </div>
-
-    <div class="card">
-        <h3>Operating Systems</h3>
-        <p>Learn about process management, memory, and file systems</p>
-        <a class="btn" href="https://enginow.in/courses">View Course</a>
-    </div>
-</div>
+</main>
 
 <footer>
-    © 2025 Enginow- Internship task version
+  <p>© 2025 Enginow. All rights reserved.</p>
 </footer>
 
 </body>

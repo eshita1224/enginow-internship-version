@@ -1,37 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Enginow - Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enginow – Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">ENGINOW</div>
-    <ul>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">Enginow</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-icon">☰</label>
+
+    <nav class="site-nav">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="container">
-    <h1>Contact Us</h1>
+<main>
 
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <a href="https://enginow.in/contact" class="btn">Submit</a>
+<section class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+      
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" required placeholder="Your name">
+
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" pattern="^\+?\d{7,15}$" placeholder="+91XXXXXXXXXX">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+
+      <button class="btn" type="submit">Send Message</button>
+
     </form>
+  </div>
+</section>
 
-</div>
+</main>
 
 <footer>
-    © 2025 Enginow — Internship Task Version
+  <p>© 2025 Enginow. All rights reserved.</p>
 </footer>
 
 </body>
